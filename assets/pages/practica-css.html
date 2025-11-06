@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Página principal de las prácticas -->
+	<!-- =========== metadatos =========== -->
+	<meta charset="utf8">
+	<meta name="description" content="practicas-- html, css, js">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="autor" content="Francis">
+	<meta http-equiv="refresh" content="10">
+	<meta name="viewport" content="width=device-width, initial-escale=1.0">
+	<!-- =========== Título e íconos =========== -->
+	<title>Prácticas CSS</title>
+	<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="icon" href="../img/icon/AppleFolder.ico">
+	<!--No es necesario siempre -->
+	<!--
+	<link rel="stylesheet" href="../Css/style_reset.css">
+	-->
+
+	<link rel="stylesheet" href="../../css/style.css">
+
+</head>
+
+<body>
+
+	<hr>
+	<!-- =========== Barra de navegación =========== -->
+	<nav>
+		<a href="../../index.html">Inicio</a> |
+		<a href="../pages/practica-texto.html">Práctica de texto</a> |
+		<a href="https://sites.google.com/fiec.espol.edu.ec/jimenezveloz/inicio">Práctica de Builder (Google Site)</a> |
+		<a href="https://frjv.my.canva.site/wikirutas">Práctica de Canva (Link a Canva)</a> |
+		<a href="../../ia/proyecto-fullstack/index.html">Práctica de Inteligencia Artificial</a> |
+		<a href="../pages/practica-listas.html">Práctica de Listas</a> |
+		<a href="../pages/practica-img.html">Práctica de Imágenes</a> |
+		<a href="../pages/practica-audio.html">Práctica de Audio</a> |
+		<a href="../pages/practica-video.html">Práctica de Video</a> |
+		<a href="../pages/practica-tablas.html">Práctica de Tablas</a> |
+		<a href="../pages/practica-css.html">Práctica de CSS</a> |
+		<a href="../../copypaste/limelight-html/index.html">Práctica de Copy Paste (Plantilla)</a> |
+		<a href="../pages/practica-controles.html">Práctica de Controles</a></li> |
+		<a href="../pages/practica-formulario.html">Práctica de Formulario</a></li> |
+		<a href="../pages/practica-formulario-2.html">Práctica de Formulario-2</a></li> |
+	</nav>
+	<hr>
+	<!-- =========== Práctica de etiquetas de CSS =========== -->
+	<main>
+		<h1>Práctica de CSS</h1>
+		<span>
+		CSS nos ayuda/sirve para dar estilo y diseño a nuestra Página Web.<br>
+		Para aplicarlo tenemos tres opciones:<br>
+		</span>
+			<div class= "Comportamiento">
+				<p class= "caja">
+				1.-En línea - Código embebido<br>
+				Línea de estilo con Código embebido<br>
+				</p>
+				<p class= "caja">
+				
+				2.-Código Interno - Código en la cabecera<br>
+				El código debe ir en la cabecera del file<br>
+				style<br>
+					p{<br>
+						background:blue;<br>
+					}<br>
+				</p>
+				<p class= "caja">
+				
+				3.-Externo - File.css<br>
+				&lt;link rel="stylesheet" href="estilo.css"&gt;<br>
+				</p>
+				
+			</div>
+			
+			
+			<div class= "Comportamiento">
+				<p class= "caja">
+				Modelo cajas#1
+				todo modelo html que se presenta, se debe tratar como una caja
+				</p>
+				<p class= "caja">
+				Modelo cajas#2<br>
+				todo modelo html que se presenta, se debe tratar como una caja
+				</p>
+				
+			</div>
+			
+		<section class="resalta">
+			<article>
+				<h4>Notas:</h4>
+				<p>
+					1.-Siempre se ejecuta de arriba hacia abajo, es decir la misma etiqueta la puede escribir dos veces y va a valer la última
+				</p>
+				<p>
+					2.-Tener cuidado con montar las etiquetas en el diseño
+				</p>
+				<p>
+					3.-Valide resetear antes de aplicar su diseño
+				</p>
+			</article>
+		</section>
+		<span>
+			<h3>Hipervínculos: abrir en una nueva pestaña</h3>
+			<p>
+				Atributo target="_blank": Este atributo se utiliza para especificar 
+				cómo se debe abrir el hipervínculo. Puede ser _blank, _self, _parent, o cualquier nombre diferente que no sea 
+				de los cuatro mencionados, 
+				que se considera _blank para abrir en una nueva pestaña o ventana.
+			</p>
+			<a href="../../index.html" target="_blank">Abrir en una nueva ventana</a>
+			<hr>
+			<h4>Hipervínculos: abrir en la misma pestaña</h4>
+			<p>
+				Los hipervínculos permiten a los usuarios navegar entre diferentes páginas web de manera sencilla. Sin embargo, no todos los navegadores permiten abrir enlaces en la misma pestaña. Para aquellos que desean mantener la navegación dentro de su sitio web o evitar que los usuarios se distraigan con otras páginas externas, es posible utilizar HTML y la propiedad target del elemento de ancla para abrir un enlace en la misma pestaña. Esto se logra estableciendo el valor «_self» para el atributo «target» del enlace.
+			</p>
+			<a href="../../index.html" target="_self">Abrir en la misma pestaña</a>
+			<hr>
+			<h5>Hipervínculos: abrir en la misma pestaña, modo seguro</h5>
+			<p>
+				Atributo rel="noopener noreferrer": Este es el uso combinado de los atributos noopener y noreferrer, que se utilizan para mejorar la seguridad y la privacidad al abrir hipervínculos. Al usar estos atributos, se puede garantizar que los hipervínculos se abren en una nueva pestaña o ventana, proporcionando una experiencia de navegación más segura y responsable
+			</p>
+			<a href="../../index.html" target="_self" rel="noopener noreferrer"> Abrir en una nueva pestaña (Modo Seguro)</a>
+			<hr>
+		
+		</span>
+		
+		<hr>
+		<h2>Botones con estilo</h2>
+		<h6>Evento over</h6>
+		<button > presioname#1</button>
+		<button class="btn"> presioname#2</button>
+	</main>
+
+	<hr>
+	<!-- =========== Pie de página =========== -->
+	<footer>
+		<p>Desarrollado por: Francis</p>
+		<p>
+			<a href= "mailto:frajvelo@espol.edu.ec">Correo</a> |
+			<a href= "tel: +5939402021--">Celular</a>
+		</p>
+		<p> © 2025 - Página de prácticas académicas | Espol </p>
+	</footer>
+	<hr>
+
+</body>
+
+</html>

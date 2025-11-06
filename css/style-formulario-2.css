@@ -1,0 +1,122 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f2f6fa;
+  margin: 0;
+  padding: 0;
+  color: #1b1b1b;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #003366;
+  padding: 12px;
+  gap: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #66b2ff;
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 30px 15px;
+}
+
+fieldset {
+  background-color: #ffffff;
+  padding: 30px 35px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  width: 420px;
+  border: 2px solid #00509e;
+}
+
+legend {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #004080;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #00509e;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 80, 158, 0.3);
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+  accent-color: #00509e;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00509e;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #003366;
+  transform: scale(1.02);
+}
+
+footer {
+  background-color: #002244;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+  color: #66b2ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #99ccff;
+}

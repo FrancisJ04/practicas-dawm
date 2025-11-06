@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Página principal de las prácticas -->
+	<!-- =========== metadatos =========== -->
+	<meta charset="utf8">
+	<meta name="description" content="practicas-- html, css, js">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="autor" content="Francis">
+	<meta http-equiv="refresh" content="10">
+	<meta name="viewport" content="width=device-width, initial-escale=1.0">
+	<!-- =========== Título e íconos =========== -->
+	<title>Prácticas Img</title>
+	<link rel="icon" href="../img/icon/MrMime.ico">
+</head>
+
+<body>
+
+	<hr>
+	<!-- =========== Barra de navegación =========== -->
+	<nav>
+		<a href="../../index.html">Inicio</a> |
+		<a href="../pages/practica-texto.html">Práctica de texto</a> |
+		<a href="https://sites.google.com/fiec.espol.edu.ec/jimenezveloz/inicio">Práctica de Builder (Google Site)</a> |
+		<a href="https://frjv.my.canva.site/wikirutas">Práctica de Canva (Link a Canva)</a> |
+		<a href="../../ia/proyecto-fullstack/index.html">Práctica de Inteligencia Artificial</a> |
+		<a href="../pages/practica-listas.html">Práctica de Listas</a> |
+		<a href="../pages/practica-img.html">Práctica de Imágenes</a> |
+		<a href="../pages/practica-audio.html">Práctica de Audio</a> |
+		<a href="../pages/practica-video.html">Práctica de Video</a> |
+		<a href="../pages/practica-tablas.html">Práctica de Tablas</a> |
+		<a href="../pages/practica-css.html">Práctica de CSS</a> |
+		<a href="../../copypaste/limelight-html/index.html">Práctica de Copy Paste (Plantilla)</a> |
+		<a href="../pages/practica-controles.html">Práctica de Controles</a></li> |
+		<a href="../pages/practica-formulario.html">Práctica de Formulario</a></li> |
+		<a href="../pages/practica-formulario-2.html">Práctica de Formulario-2</a></li> |
+	</nav>
+	<hr>
+	<!-- =========== Práctica de etiquetas de img =========== -->
+	<main>
+		<h1>Práctica de Img</h1>
+	</main>
+
+	<main>
+        <iframe 
+            title=""
+            width="315"
+            height="315"
+            src="https://www.playbalatro.com/"
+            style="border: 1px solid">
+        </iframe>
+
+        <iframe width="560"
+        height="315"
+        src="https://www.youtube.com/embed/ELSm-G201Ls?si=ui1aKZ8abpzV9uDJ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+        picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+
+        <hr>
+
+        <h3>Etiqueta IMG (básica - imagen local)</h3>
+        <img src="../img/spacesky.jpeg"
+        width="300px"
+        height="300px"
+        alt="Imagen del cielo espacial">
+        <hr>
+
+        <h3>Etiqueta IMG (medio - imagen externa)</h3>
+        <img src="https://images.pexels.com/photos/635279/pexels-photo-635279.jpeg"
+        width="500px"
+        height="300px"
+        alt="Imagen de un atardecer en el mar">
+
+        <hr>
+        <img 
+            src="../img/Cloud.png" 
+            alt="Red de computadoras"
+            usemap="#NubeComputadora"
+        >
+        <map name="NubeComputadora">
+            <area
+                shape="poly"
+                alt="computadora de escritorio"
+                coords="414,54,478,85,513,66,546,85,539,208,478,224,348,135,397,115,411,52"
+                href="../pages/nube/Pc.html"            
+            >
+            </area>
+        </map>
+        <hr>
+
+        <h3>Imagen responsiva (Adaptable según las dimensiones de la pantalla)</h3>
+        <picture>
+            <source media="(min-width: 750px)" srcset="../img/hacker-750.jpg">
+            <source media="(min-width: 650px)" srcset="../img/hacker-650.jpg">
+            <source media="(min-width: 550px)" srcset="../img/hacker-550.jpg">
+            <source media="(min-width: 400px)" srcset="../img/hacker-400.jpg">
+            <img src="../img/hacker-all.jpg" alt="Hacker de todos">
+        </picture> 
+    </main>
+
+    <hr>
+	<!-- =========== Pie de página =========== -->
+	<footer>
+		<p>Desarrollado por: Francis</p>
+		<p>
+			<a href= "mailto:frajvelo@espol.edu.ec">Correo</a> |
+			<a href= "tel: +5939402021--">Celular</a>
+		</p>
+		<p> © 2025 - Página de prácticas académicas | Espol </p>
+	</footer>
+	<hr>
+
+</body>
+
+</html>

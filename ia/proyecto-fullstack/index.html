@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende Full Stack Development desde cero. HTML, CSS, JavaScript, React, Node.js y más.">
+    <meta name="keywords" content="full stack, desarrollo web, programación, frontend, backend">
+    <title>Full Stack Development | Aprende Desarrollo Web</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text">FullStack Dev</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/about.html">Acerca de</a></li>
+                <li><a href="pages/portfolio.html">Portfolio</a></li>
+                <li><a href="pages/contact.html">Contacto</a></li>
+                <li><a href="../../index.html">Volver al menú</a></li>
+            </ul>
+            <button id="themeToggle" class="theme-btn">🌙 Cambiar Tema</button>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Domina el <span class="gradient-text">Full Stack</span> Development
+                </h1>
+                <p class="hero-subtitle">
+                    Aprende a construir aplicaciones web completas desde el frontend hasta el backend
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('skills')">Comenzar Ahora</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='pages/portfolio.html'">Ver Portfolio</button>
+                </div>
+            </div>
+            <div class="hero-animation">
+                <div class="code-block">
+                    <div class="code-line"><span class="keyword">const</span> developer = {</div>
+                    <div class="code-line indent">frontend: <span class="string">'React'</span>,</div>
+                    <div class="code-line indent">backend: <span class="string">'Node.js'</span>,</div>
+                    <div class="code-line indent">database: <span class="string">'MongoDB'</span></div>
+                    <div class="code-line">};</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Stack -->
+    <section id="stack" class="about">
+        <div class="container">
+            <h2 class="section-title">¿Qué es Full Stack Development?</h2>
+            <p class="section-description">
+                El desarrollo full stack combina las habilidades del frontend y backend, 
+                permitiéndote crear aplicaciones web completas de principio a fin.
+            </p>
+            <div class="stack-diagram">
+                <div class="stack-layer frontend">
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript, React, Vue</p>
+                </div>
+                <div class="stack-layer backend">
+                    <h3>Backend</h3>
+                    <p>Node.js, Python, Express, API REST</p>
+                </div>
+                <div class="stack-layer database">
+                    <h3>Base de Datos</h3>
+                    <p>MongoDB, PostgreSQL, MySQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Skills -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Tecnologías Principales</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>React</h3>
+                    <p>Biblioteca de JavaScript para construir interfaces de usuario interactivas y modernas</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🟢</div>
+                    <h3>Node.js</h3>
+                    <p>Entorno de ejecución para JavaScript del lado del servidor</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🍃</div>
+                    <h3>MongoDB</h3>
+                    <p>Base de datos NoSQL flexible y escalable para aplicaciones modernas</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>CSS/Tailwind</h3>
+                    <p>Estilos modernos y frameworks para diseño responsive</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🔧</div>
+                    <h3>Git & GitHub</h3>
+                    <p>Control de versiones y colaboración en equipo</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🚀</div>
+                    <h3>Deployment</h3>
+                    <p>Vercel, Netlify, Heroku para llevar tus apps a producción</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Llamada a la Acción -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="section-title">¿Listo para comenzar?</h2>
+            <p class="section-description">
+                Únete a miles de desarrolladores que están transformando sus carreras
+            </p>
+            <button class="btn btn-primary" onclick="window.location.href='pages/contact.html'">Contáctanos Ahora</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>FullStack Dev</h4>
+                    <p>Aprende desarrollo web profesional</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="pages/about.html">Acerca de</a></li>
+                        <li><a href="pages/portfolio.html">Portfolio</a></li>
+                        <li><a href="pages/contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" title="GitHub">GitHub</a>
+                        <a href="#" title="LinkedIn">LinkedIn</a>
+                        <a href="#" title="Twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FullStack Dev. Creado con ❤️ para desarrolladores</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

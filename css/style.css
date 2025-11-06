@@ -1,0 +1,241 @@
+/*
+--En Css tenemos varios tipos de selector.
+
+Estructura básica de Css
+Selector{
+    linea al final;
+    propiedad: valor;
+    propiedad: valor;
+    propiedad: valor;
+    Css No distingue entre mayúscula/Minúscula en propiedades.
+    Se se ve la diferencia entre mayúscula/Minúscula en el nombre del file.Css
+    style.css
+    STYLE.css
+}
+
+1.-Selecto de elemento (selector de etiqueta)
+Solo requiere que se indique cual es la etiqueta HTML que se desea aplicar con diseño
+
+
+body {
+    
+}
+
+h1 {
+    
+}
+
+h3 {
+    
+}
+
+h4 {
+    
+}
+
+p {
+    
+}
+
+2.-Selector de clase (inicia con un punto)
+-Mayoria de framework usan este tipo de selector
+-Son al inicio de la etiqueta/selector en CSS inicia con un punto, es una selector de clase
+-Los selectores de clase son de su propia imaginación
+
+CSS:
+.Titulo {
+    
+}
+
+.Cuerpo {
+    
+}
+
+.Ficha {
+    
+}
+
+HTML:
+<p class="Cuerpo"> texto que aparece en pantalla </p>
+
+Debe ser el mismo que se puso en HTML y en CSS
+diferencias:
+    -Varios elementos/etiquetas HTML pueden aplicar la misma clase
+
+
+3.-Selector ID (se antepone el #)
+-Cuando se asigna/relaciona con un ID unico a una etiqueta/elemento HTML
+
+CSS:
+#Titulo {
+    
+}
+
+#Cuerpo {
+    
+}
+
+#Ficha {
+    
+}
+
+HTML:
+<p id="Cuerpo"> texto que aparece en pantalla </p>
+
+Diferencias:
+    -Solo un elemento/etiqueta HTML puede aplicar esa clase
+
+
+4.-selector combinado (donde especifica la etiqueta HTML por niveles)
+
+*/
+/*reset basico*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+	max-width:90%;
+	margin:50px;
+	padding:0px;
+	/*text-align: center;*/
+}
+
+/*fuente externa*/
+.bbh-sans-bogle-regular {
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*reset basico*/
+body {
+    font-family: "Comic Sans MS", "Montserrat", sans-serif;
+    background: linear-gradient(135deg, #dfe6e9 0%, #b2bec3 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background: blue;
+    color: black;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header nav a {
+	color:white;
+	text-decoration:none;
+	margin:0 8px;
+	padding:5px 8px;
+	transition:background 0.3s;
+}
+nav{
+	
+	text-align:center;
+	
+}
+
+.caja {
+    background: #D3D3D3;
+    width: 30%;
+    padding: 5px;
+    border: 5px solid blue;
+    margin: 10px;
+	justify-content:center;
+	text-align:center;
+}
+
+.Comportamiento{
+	display:flex;
+	background:lightblue;
+	margin:10px;
+	padding:5px;
+	justify-content:center;
+}
+
+
+
+button{
+	padding:10px,20px;
+	margin:10px;
+	border:none;
+	background:#003366;
+	color:white;
+	
+	border-radius:5px;
+	font-weight:bold;
+	cursor:pointer;
+	transition:; 
+}
+
+nav a:hover{
+	background:orange;
+	color:black;
+	border-radius:5px;
+	
+}
+button:hover{
+	background:#0055a5;
+	transform:scale(1.05);
+}
+
+.btn{
+	background:yellow;
+	color:blue;
+}
+
+h1,h2, h3{
+	margin-bottom:20px;
+	color:#f54927;
+}
+
+h1{
+	text-align:center;
+	color:red;
+	text-transform:uppercase;
+	text-decoration: underline;
+    animation: aparecer 2s ease-out;
+	
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.resalta{
+	color: #003366;
+    font-weight: bold;
+    background: #d8e4f5;
+    padding: 5px 10px;
+    border-left: 4px solid #003366;
+}
+
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+
+/*ejemplos responsive*/
+@media (max-width: 768px) {
+    body {
+        background: yellow;
+    }
+}
+
+/* Ejemplo para pantallas más pequeñas (mobile) */
+@media (max-width: 480px) {
+    body {
+        background: red;
+    }
+}
